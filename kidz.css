@@ -7,7 +7,8 @@
     border: 2px solid black ;
     /* width: 100%; */
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    
     align-items: center;
 }
 #nav img {
@@ -97,17 +98,97 @@ button{
     flex-wrap: wrap;
     /* justify-content: center; */
 }
-@media only screen and (max-width: 425px){
+   
+  
+
+#footer{
+    height: 240px;
+    background-color: black;
+    color: white;
+}
+#footer img{
+    height:200px;
+    width: 250px;
+    border-radius: 50%;
+}
+.evenly{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.big{
+    font-size: x-large;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 625px){
     .title{
         font-size:xx-large;
     }
-
-  
+    #hand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #Games{
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        
+    }    
+    /* #books{
+        display:flex;
+        flex-direction: column;
+    }  */
+    .big{
+        font-size:large;
+    }
+    #footer img{
+        height: 150px;
+        width: 150px;
+    }
 }
-@media only screen and (min-width: 1445px){
-   
-  
+#inline{
+    display:inline-block;
 }
-#kart{
-    margin-left: 70%;
+.up{
+    display: inline-block;
+    position: relative;
+    bottom: 23px;
+}
+@media only screen and (max-width: 426px){
+    .title{
+        font-size:xx-large;
+    }
+    #hand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #Games{
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        
+    }    
+    #books{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .big{
+        font-size:small;
+    }
+    #footer img{
+        height: 100px;
+        width: 100px;
+    } 
 }
